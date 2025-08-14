@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMSERIES — Aksesoris Kamar Estetik & Fungsional</title>
+  <meta name="description" content="ROOMSERIES menjual aksesoris kamar estetik dan fungsional: lampu hias, cermin, rak ambalan, karpet, dan dekor minimalis. Kirim ke seluruh Indonesia.">
+  <meta name="theme-color" content="#111827">
+  <meta property="og:title" content="ROOMSERIES — Aksesoris Kamar Estetik & Fungsional" />
+  <meta property="og:description" content="Dekor kamar jadi estetik dan nyaman. Cek katalog & order via WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'><rect width='100%' height='100%' fill='%23111827'/><text x='50%' y='50%' fill='white' font-size='48' text-anchor='middle' dominant-baseline='middle'>ROOMSERIES</text></svg>">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#121933;
+      --acc:#8b5cf6;
+      --acc-2:#22d3ee;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+      --ok:#10b981;
+      --warn:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,var(--bg),#0f172a 60%,#0b1020);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1080px,92%);margin-inline:auto}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;background:linear-gradient(135deg,var(--acc),var(--acc-2));padding:.85rem 1.2rem;border-radius:.9rem;font-weight:700;box-shadow:0 10px 30px rgba(139,92,246,.25);transition:transform .2s ease, box-shadow .2s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(34,211,238,.25)}
+    .btn.secondary{background:#ffffff0f;border:1px solid #ffffff1a;box-shadow:none}
+    .tag{display:inline-block;padding:.25rem .6rem;border:1px solid #ffffff26;border-radius:999px;font-size:.82rem;color:var(--muted)}
+    .grid{display:grid;gap:1.2rem}
+    @media(min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-4{grid-template-columns:repeat(4,1fr)}}
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid #ffffff12}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.3px}
+    .brand .logo{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 0deg,var(--acc),var(--acc-2));box-shadow:0 6px 20px rgba(139,92,246,.35)}
+    .nav a{opacity:.9}
+    .nav .links{display:none;gap:1rem}
+    .nav .links a{padding:.5rem .8rem;border-radius:.6rem}
+    .nav .links a:hover{background:#ffffff10}
+    .burger{display:inline-flex;flex-direction:column;gap:4px;border:1px solid #ffffff20;padding:.4rem .5rem;border-radius:.6rem;cursor:pointer}
+    .burger span{width:20px;height:2px;background:#fff;border-radius:1px}
+    @media(min-width:900px){.nav .links{display:flex}.burger{display:none}}
+    /* Mobile menu */
+    .mobile{display:none;flex-direction:column;gap:.8rem;padding-bottom:.8rem}
+    .mobile.open{display:flex}
+    /* Hero */
+    .hero{display:grid;gap:2rem;align-items:center;padding:3rem 0 2rem}
+    @media(min-width:900px){.hero{grid-template-columns:1.1fr .9fr;padding:4rem 0 3rem}}
+    .hero h1{font-size:clamp(1.9rem,3vw+1rem,3rem);line-height:1.15;margin:.25rem 0 .8rem}
+    .hero p{color:var(--muted);max-width:56ch}
+    .highlight{background:linear-gradient(90deg,#ffffff10,#ffffff03);border:1px solid #ffffff1a;padding:.5rem .8rem;border-radius:.8rem;display:inline-flex;align-items:center;gap:.5rem}
+    .hero-visual{position:relative;aspect-ratio:1/1;border-radius:1.2rem;overflow:hidden;border:1px solid #ffffff14;background:radial-gradient(100% 100% at 0% 0%,#1f2a50 0%,#0b1020 40%);}
+    .floating{position:absolute;border-radius:14px;border:1px solid #ffffff20;background:#ffffff0c;backdrop-filter:blur(6px);padding:.7rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,.25);animation:float 6s ease-in-out infinite}
+    .floating small{display:block;color:var(--muted)}
+    .f1{top:10%;left:8%;animation-delay:0s}
+    .f2{bottom:12%;right:8%;animation-delay:1.2s}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    /* Badges */
+    .badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.8rem}
+    .badge{display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .6rem;border:1px dashed #ffffff33;border-radius:.6rem;font-size:.85rem;color:#cbd5e1}
+    /* Section */
+    section{padding:2.6rem 0;border-top:1px solid #ffffff10}
+    section h2{font-size:clamp(1.4rem,1.2vw+1rem,2rem);margin:.3rem 0 1rem}
+    section .lead{color:var(--muted);max-width:60ch}
+    /* Cards */
+    .card{background:linear-gradient(180deg,#121833,#0d1326);border:1px solid #ffffff12;border-radius:1rem;padding:1rem;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .card .head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.4rem}
+    .price{font-weight:800}
+    .strike{color:#94a3b8b3;text-decoration:line-through;margin-right:.4rem}
+    .chip{font-size:.75rem;padding:.2rem .5rem;border-radius:.5rem;background:#22d3ee1a;border:1px solid #22d3ee33}
+    .actions{display:flex;gap:.6rem;margin-top:.8rem;flex-wrap:wrap}
+    .actions .btn{font-size:.95rem;padding:.6rem .9rem;border-radius:.7rem}
+    /* Testimonials */
+    .carousel{position:relative;overflow:hidden;border-radius:1rem;border:1px solid #ffffff12}
+    .track{display:flex;gap:1rem;animation:scroll 24s linear infinite}
+    .review{min-width:320px;background:#0d1326;border-right:1px solid #ffffff10;padding:1rem}
+    .review strong{display:block;margin-bottom:.2rem}
+    @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    /* FAQ */
+    .faq details{border:1px solid #ffffff1a;border-radius:.8rem;padding:.9rem 1rem;background:#0d1326}
+    .faq summary{cursor:pointer;font-weight:700}
+    .faq details+details{margin-top:.8rem}
+    /* Footer */
+    footer{padding:2.2rem 0;color:#9fb0c8}
+    footer a{opacity:.9}
+    /* Reveal on scroll */
+    .reveal{opacity:0;transform:translateY(10px);transition:all .5s ease}
+    .reveal.visible{opacity:1;transform:none}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "ROOMSERIES",
+    "image": "https://example.com/logo.png",
+    "description": "Toko aksesoris kamar estetik dan fungsional.",
+    "url": "https://example.com",
+    "telephone": "+62-812-3456-7890",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "ID"
+    },
+    "sameAs": ["https://instagram.com/roomglow"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true"></span>
+        <span>ROOMSERIES</span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#katalog">Katalog</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="container mobile" id="mobile-menu" role="navigation" aria-label="Mobile">
+      <a href="#katalog">Katalog</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="container hero">
+    <div>
+      <span class="highlight reveal">✨ Upgrade Kamar Kamu — estetik, rapi, dan nyaman</span>
+      <h1 class="reveal">Aksesoris Kamar<br/> Estetik & Fungsional</h1>
+      <p class="reveal">Mulai dari lampu hias, rak ambalan, cermin, hingga karpet. Koleksi terkurasi dengan kualitas terbaik dan harga ramah dompet.</p>
+      <div class="badges reveal" aria-label="Selling points">
+        <span class="badge">COD & Garansi 7 Hari</span>
+        <span class="badge">Gratis Ongkir* Tertentu</span>
+        <span class="badge">Support WA 09.00–21.00</span>
+      </div>
+      <div class="actions reveal" style="margin-top:1rem">
+        <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20order%20aksesoris%20kamar." target="_blank" rel="noopener" aria-label="Order via WhatsApp">🛒 Order via WhatsApp</a>
+        <a class="btn secondary" href="#katalog">Lihat Katalog</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal" aria-hidden="true">
+      <!-- Decorative placeholders (inline SVG as data images) -->
+      <img alt="Moodboard dekor kamar" loading="lazy"
+        src="data:image/svg+xml;utf8,<?xml version='1.0' encoding='UTF-8'?><svg xmlns='http://www.w3.org/2000/svg' width='900' height='900'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%2322d3ee'/><stop offset='100%' stop-color='%238b5cf6'/></linearGradient></defs><rect width='100%' height='100%' fill='%23111827'/><circle cx='180' cy='200' r='120' fill='url(%23g)' opacity='.35'/><rect x='420' y='140' width='260' height='180' rx='22' fill='%23ffffff10' stroke='%23ffffff25'/><rect x='220' y='470' width='460' height='240' rx='22' fill='%23ffffff08' stroke='%23ffffff25'/><text x='50%' y='92%' fill='%23a5b4fc' font-family='Arial' font-size='24' text-anchor='middle'>ROOMSERIES</text></svg>" />
+      <div class="floating f1">
+        <strong>4.9/5</strong>
+        <small>1.200+ ulasan</small>
+      </div>
+      <div class="floating f2">
+        <strong>Best Seller</strong>
+        <small>Lampu awan & neon</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keunggulan -->
+  <section id="keunggulan">
+    <div class="container">
+      <span class="tag reveal">Kenapa belanja di kami</span>
+      <h2 class="reveal">Kualitas terkurasi. Harga jujur. Pengiriman cepat.</h2>
+      <p class="lead reveal">Kami pilih bahan yang awet, finishing rapi, dan kemasan aman. Cocok untuk makeover kamar kos, apartemen, hingga kamar anak.</p>
+      <div class="grid cols-3" style="margin-top:1.2rem">
+        <div class="card reveal">
+          <div class="head"><strong>Material Premium</strong><span class="chip">Garansi</span></div>
+          <p class="muted">Kayu solid/metal tahan lama, LED hemat energi, dan kaca tebal anti-distorsi.</p>
+        </div>
+        <div class="card reveal">
+          <div class="head"><strong>Desain Estetik</strong><span class="chip">Trend 2025</span></div>
+          <p>Koleksi minimalis, scandi, dan japandi yang gampang dipadukan.</p>
+        </div>
+        <div class="card reveal">
+          <div class="head"><strong>Service Responsif</strong><span class="chip">Fast Response</span></div>
+          <p>CS ramah bantu pilih ukuran & kombinasi warna terbaik buat kamarmu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katalog -->
+  <section id="katalog">
+    <div class="container">
+      <span class="tag reveal">Katalog Pilihan</span>
+      <h2 class="reveal">Produk Best Seller</h2>
+      <div class="grid cols-3" style="margin-top:1rem">
+        <!-- Product Card Template -->
+        <!-- 1 -->
+        <article class="card reveal">
+          <div class="head">
+            <strong>Lampu Awan LED</strong>
+            <span class="price"><span class="strike">Rp159.000</span> Rp129.000</span>
+          </div>
+          <img alt="Lampu awan LED" loading="lazy"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23111827'/><ellipse cx='180' cy='220' rx='140' ry='90' fill='%23a5b4fc'/><ellipse cx='320' cy='220' rx='140' ry='90' fill='%2392a5ff'/></svg>">
+          <p style="color:var(--muted)">Bahan PU foam, LED warm white, gantung & tempel.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20order%20Lampu%20Awan%20LED%20(1pcs)." target="_blank" rel="noopener">Order</a>
+            <a class="btn secondary" href="#faq">Detail</a>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="card reveal">
+          <div class="head">
+            <strong>Cermin Bulat Minimalis 40cm</strong>
+            <span class="price">Rp179.000</span>
+          </div>
+          <img alt="Cermin bulat minimalis" loading="lazy"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23111827'/><circle cx='300' cy='200' r='160' fill='%23cbd5e1'/></svg>">
+          <p style="color:var(--muted)">Kaca 5mm, bevel halus, hanger kokoh.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20order%20Cermin%20Bulat%2040cm%20(1pcs)." target="_blank" rel="noopener">Order</a>
+            <a class="btn secondary" href="#faq">Detail</a>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="card reveal">
+          <div class="head">
+            <strong>Rak Ambalan Kayu 40cm</strong>
+            <span class="price"><span class="strike">Rp99.000</span> Rp79.000</span>
+          </div>
+          <img alt="Rak ambalan kayu" loading="lazy"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23111827'/><rect x='120' y='240' width='360' height='30' fill='%23f59e0b'/></svg>">
+          <p style="color:var(--muted)">Kayu pinus finishing doff, bracket tersembunyi.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20order%20Rak%20Ambalan%2040cm%20(1pcs)." target="_blank" rel="noopener">Order</a>
+            <a class="btn secondary" href="#faq">Detail</a>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="card reveal">
+          <div class="head">
+            <strong>Lampu Neon Teks</strong>
+            <span class="price">Mulai Rp299.000</span>
+          </div>
+          <img alt="Lampu neon teks" loading="lazy"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23111827'/><text x='50%' y='50%' fill='%23f472b6' font-size='48' text-anchor='middle' dominant-baseline='middle'>good vibes</text></svg>">
+          <p style="color:var(--muted)">Custom nama/quote, 7 pilihan warna LED.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20custom%20Lampu%20Neon%20Teks%20(dengan%20desain%20...)." target="_blank" rel="noopener">Custom Sekarang</a>
+            <a class="btn secondary" href="#faq">Detail</a>
+          </div>
+        </article>
+        <!-- 5 -->
+        <article class="card reveal">
+          <div class="head">
+            <strong>Karpet Bulu Lembut 120x160</strong>
+            <span class="price">Rp199.000</span>
+          </div>
+          <img alt="Karpet bulu lembut" loading="lazy"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23111827'/><rect x='80' y='100' width='440' height='200' rx='20' fill='%23a78bfa'/></svg>">
+          <p style="color:var(--muted)">Anti-slip, mudah dibersihkan, banyak warna.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20order%20Karpet%20Bulu%20120x160%20(warna%20...).">Order</a>
+            <a class="btn secondary" href="#faq">Detail</a>
+          </div>
+        </article>
+        <!-- 6 -->
+        <article class="card reveal">
+          <div class="head">
+            <strong>Meja Lipat Dinding</strong>
+            <span class="price">Rp279.000</span>
+          </div>
+          <img alt="Meja lipat dinding" loading="lazy"
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='%23111827'/><rect x='100' y='200' width='400' height='28' fill='%2392ffc7'/></svg>">
+          <p style="color:var(--muted)">Hemat ruang, cocok untuk belajar & kerja.</p>
+          <div class="actions">
+            <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20order%20Meja%20Lipat%20Dinding%20(1pcs).">Order</a>
+            <a class="btn secondary" href="#faq">Detail</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="actions" style="margin-top:1.2rem">
+        <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20lihat%20katalog%20lengkapnya.">Lihat Semua Katalog</a>
+        <span class="tag">Diskon bundling tersedia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni">
+    <div class="container">
+      <span class="tag reveal">Apa kata mereka</span>
+      <h2 class="reveal">Testimoni Pelanggan</h2>
+      <div class="carousel reveal" aria-live="polite">
+        <div class="track">
+          <div class="review">
+            <strong>Rani — Bandung</strong>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+            <p>Rak ambalannya kokoh dan finishing-nya mulus. Pemasangan mudah!</p>
+          </div>
+          <div class="review">
+            <strong>Dimas — Depok</strong>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+            <p>Lampu awan gemes! Kamar jadi cozy banget, paket rapi.</p>
+          </div>
+          <div class="review">
+            <strong>Nadia — Surabaya</strong>
+            <span>⭐️⭐️⭐️⭐️</span>
+            <p>Karpet lembut dan nggak mudah rontok. Worth it di harga segini.</p>
+          </div>
+          <div class="review">
+            <strong>Andre — Jogja</strong>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+            <p>CS responsif bantu pilih ukuran cermin yang pas. Mantap!</p>
+          </div>
+          <!-- duplicate for seamless loop -->
+          <div class="review">
+            <strong>Rani — Bandung</strong>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+            <p>Rak ambalannya kokoh dan finishing-nya mulus. Pemasangan mudah!</p>
+          </div>
+          <div class="review">
+            <strong>Dimas — Depok</strong>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+            <p>Lampu awan gemes! Kamar jadi cozy banget, paket rapi.</p>
+          </div>
+          <div class="review">
+            <strong>Nadia — Surabaya</strong>
+            <span>⭐️⭐️⭐️⭐️</span>
+            <p>Karpet lembut dan nggak mudah rontok. Worth it di harga segini.</p>
+          </div>
+          <div class="review">
+            <strong>Andre — Jogja</strong>
+            <span>⭐️⭐️⭐️⭐️⭐️</span>
+            <p>CS responsif bantu pilih ukuran cermin yang pas. Mantap!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <span class="tag reveal">Butuh info cepat?</span>
+      <h2 class="reveal">FAQ</h2>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Bagaimana cara order?</summary>
+          <p>Klik tombol <b>Order via WhatsApp</b> di produk yang kamu pilih. Sebutkan varian/warna/ukuran, alamat, dan metode pembayaran.</p>
+        </details>
+        <details class="reveal">
+          <summary>Apakah bisa COD?</summary>
+          <p>Bisa, untuk area tertentu. Tim kami akan konfirmasi ketersediaan COD setelah alamat kamu diterima.</p>
+        </details>
+        <details class="reveal">
+          <summary>Berapa lama proses pengiriman?</summary>
+          <p>1–2 hari proses, 1–5 hari pengiriman tergantung jasa kurir dan kota tujuan.</p>
+        </details>
+        <details class="reveal">
+          <summary>Bagaimana garansi produk?</summary>
+          <p>Garansi 7 hari sejak barang diterima untuk cacat produksi. Cukup kirimkan video unboxing & keluhan via WhatsApp.</p>
+        </details>
+      </div>
+      <div class="actions" style="margin-top:1rem">
+        <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20punya%20pertanyaan%20tentang%20produk.">Tanya Admin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="container">
+      <div class="card reveal" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <div>
+          <h2 style="margin:0">Siap Makeover Kamarmu?</h2>
+          <p class="lead" style="margin:.2rem 0 0">Checkout cepat lewat WhatsApp. Konsultasi gratis.</p>
+        </div>
+        <a class="btn" href="https://wa.me/628568581072?text=Halo%20ROOMSERIES%2C%20saya%20mau%20konsultasi%20dekor.">Mulai Chat</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+      <div class="brand"><span class="logo"></span><span>ROOMSERIES</span></div>
+      <small>© <span id="year"></span> ROOMSERIES. All rights reserved.</small>
+      <div style="display:flex;gap:.8rem">
+        <a href="#katalog">Katalog</a> •
+        <a href="https://wa.me/628568581072" target="_blank" rel="noopener">WhatsApp</a> •
+        <a href="mailto:cs@roomglow.id">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky mobile menu toggle
+    const burger = document.getElementById('burger');
+    const mobile = document.getElementById('mobile-menu');
+    const toggleMenu = () => {
+      const isOpen = mobile.classList.toggle('open');
+      burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    };
+    burger?.addEventListener('click', toggleMenu);
+    burger?.addEventListener('keypress', (e)=>{ if(e.key==='Enter') toggleMenu(); });
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+    },{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
